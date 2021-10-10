@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://kit.fontawesome.com/ad8f64a676.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <title>JavaScript Task</title>
+</head>
+
+<body>
+    <div class='bodyContainer'>
+        <div id="languageListContainer">
+            <h1>Language List</h1>
+            <div class='searchContainer'>
+                <i class="fas fa-search"></i>
+                <input class="searchBox" type="text" placeholder="Search Language"
+                    oninput="searchHandler(this.value)" />
+            </div>
+            <div id="languageList"></div>
+            <div id="emptySearchList" class="displayNone">
+                <img src="search.png"/>
+                <span>No languages found</span>
+            </div>
+        </div>
+        <div class="selectedListContainer">
+            <h1>Selected List</h1>
+            <div class="dragAndDropAreaContainer">
+                <textarea readonly class='dragAndDropArea' placeholder="Drag & drop languages here" rows="14"
+                    cols="50"></textarea>
+                <div id="selectedList"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
